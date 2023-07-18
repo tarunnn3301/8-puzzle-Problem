@@ -139,7 +139,9 @@ class Puzzle:
             # If difference between my current and goal state is 0 then it will break the while loop and print
             if self.difference(cur.data, goal) == 0:
                 print("==================================================\n")
-                print("It took my program " + str(steps) + " steps to solve this puzzle")
+                print("It took my program " + str(cur.level) + " steps to solve this puzzle\n")
+                print("It took my program " + str(steps) + " iterations to solve this puzzle\n")
+
                 break
 
             # Now both of the if condition are not true then it will append all child of current state in self.open list
